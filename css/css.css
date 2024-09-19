@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr; 
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section section adds"
+        "foot foot foot"
+        "rrss rrss rrss";
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(22, 89, 67);
+    color: rgba(255, 255, 255, 0.715);
+    padding: 20px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(122, 173, 102);
+    padding: 20px;
+}
+
+.section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.section1 {
+    background-color: chartreuse;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.section2 {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.adds {
+    grid-area: adds;
+    background-color: rgb(214, 146, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publi {
+    background-color: rgb(102, 236, 102);
+    padding: 10px;
+    color: white;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: darkgoldenrod;
+    padding: 20px;
+}
+
+.rrss {
+    grid-area: rrss;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkolivegreen;
+    padding: 20px;
+}
+
+.face, .yt, .ig {
+    background-color: lightblue;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.face {
+    background-color: blue;
+    color: white;
+}
+
+.yt {
+    background-color: red;
+    color: white;
+}
+
+.ig {
+    background-color: purple;
+    color: white;
+}
